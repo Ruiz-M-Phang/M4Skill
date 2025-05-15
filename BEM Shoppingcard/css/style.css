@@ -55,8 +55,7 @@ a {
 
 }
 
-.shoppingcard__div--counter::before{
-    content: attr(data-counter);
+.shoppingcard__div--counter{
     position: absolute;
     right: -0.1rem;
     top: -0.5rem;
