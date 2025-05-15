@@ -108,6 +108,16 @@ img {
     border-radius: 1rem;
 }
 
+.details__button--verwijder{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+    color: var(--color_white);
+    background-color: var(--button_enabled);
+    cursor:pointer;
+    border-radius: 1rem;
+}
+
 .details__button--disabled{
     width: 5rem;
     height: 2rem;
@@ -117,7 +127,7 @@ img {
      border-radius: 1rem;
 }
 
-@media screen and (max-width:1166px) {
+@media screen and (max-width:1252px) {
     .product__container {
     margin: 2rem auto 2rem auto;
     display:grid;
