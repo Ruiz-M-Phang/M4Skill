@@ -9,6 +9,7 @@ function ProductToeVoegen(){
     }
 }
 
+
 function MinKnop(){
     for(let i=0; i <= 0; i++){
         if (counter.innerHTML > 0){
