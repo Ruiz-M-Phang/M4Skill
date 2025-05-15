@@ -9,3 +9,10 @@ function ProductToeVoegen(){
     }
 }
 
+function MinKnop(){
+    for(let i=0; i <= 0; i++){
+        counter.innerHTML--;
+        counter.innerHTML = 0;
+    }
+}
+
