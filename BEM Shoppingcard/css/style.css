@@ -1,0 +1,131 @@
+/* var */
+
+:root{
+    --color_white: white ;
+    --color_red: red ;
+    --button_enabled: black;
+    --button_disabled: rgb(88, 88, 88);
+}
+
+/* Reset css */
+
+*, *::before, *::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    }
+    
+    html, body {
+     min-height: 100vh;
+    }
+    html {
+     font-size: 62.5%; /* font is 10px */
+     scroll-behavior: smooth;
+    }
+    
+    img{
+     max-width: 100%;
+     height: auto;
+    }
+
+/* style van webpagina */
+
+body {
+    background: linear-gradient(to right, #00ffff 0%, #ff33cc 100%);
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+}
+
+.shoppingcard__link--click{
+    color: black;
+    
+}
+
+.topNav__shoppingcard {
+    /* display: flex; */
+    /* flex-direction: row-reverse; */
+    list-style: none;
+    position: relative;
+
+}
+
+.shoppingcard__div--counter::before{
+    content: attr(data-counter);
+    position: absolute;
+    right: -0.1rem;
+    top: -0.5rem;
+    block-size: auto;
+    background-color: var(--color_red);
+    color: var(--color_white);
+    padding: 0.5rem;
+    border-radius: 15rem 15rem 15rem 15rem;
+    text-align: center;
+    width: 1rem;
+    height: 1rem;
+
+}
+
+.svg-inline--fa {
+    margin: auto 1rem auto 1rem;
+    height: 5rem;
+}
+
+.product__container {
+    margin: 2rem auto 2rem auto;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 1rem;
+    justify-content: center;
+    justify-items: center;
+   
+}
+
+.product__card {
+    display: flex;
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: left;
+    background-color: var(--color_white);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 3%;
+}
+
+img {
+    justify-self: center;
+    width: 15rem;
+}
+
+.details__button--enabled{
+    width: 5rem;
+    height: 2rem;
+    color: var(--color_white);
+    background-color: var(--button_enabled);
+    cursor:pointer;
+    border-radius: 1rem;
+}
+
+.details__button--disabled{
+    width: 5rem;
+    height: 2rem;
+    color: var(--color_white);
+    background-color: var(--button_disabled);
+    cursor:not-allowed;
+     border-radius: 1rem;
+}
+
+@media screen and (max-width:1130px) {
+    .product__container {
+    margin: 2rem auto 2rem auto;
+    display:grid;
+    grid-template-columns: auto auto;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    justify-content: center;
+    justify-items: center;
+}
+}
