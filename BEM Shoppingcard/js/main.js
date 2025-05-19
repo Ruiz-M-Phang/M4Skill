@@ -44,5 +44,5 @@ productenLijst.forEach(producten => {
     clone.querySelector(".details__text").textContent = producten[0];
     clone.querySelector(".details__prijs").textContent = producten[1];
     clone.querySelector(".product__img--zero-sugar").src = producten[2];
-    clone.querySelector(".details__button--enabled").centent = producten[3,1];
+    clone.querySelector(".details__button--enabled").centent = producten[3];
 });
