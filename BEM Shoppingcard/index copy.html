@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/all.min.js" ></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <title>MonsterShop.co</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <nav class="topNav">
+        <ul>
+            <li class="topNav__shoppingcard">
+                <a class="shoppingcard__link--click" href="">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="shoppingcard__div--counter" id="data-counter">0</div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <section class="product__container">
+        <div class="product__card">
+            <img class="product__img--zero-sugar" src="images/Monster Energy zero sugar.webp" alt="Monster Energy zero sugar">
+                <div class="product__details">
+                    <h2 class="details__text">Monster Energy zero sugar</h2>
+                    <h3 class="details__prijs">€1,39</h3>
+                    <button class="details__button--enabled" onclick="ProductToeVoegen()">Voeg toe <button class="details__button--verwijder" onclick="MinKnop()">-</button></button>
+                </div>
+        </div>
+        <div class="product__card">
+            <img class="product__img--mango-loco" src="images/monster-energy-mango-loco.jpg" alt="Monster Energy mango loco">
+                <div class="product__details">
+                    <h2 class="details__text">Monster Energy mango loco</h2>
+                    <h3 class="details__prijs">€1,39</h3>
+                    <button class="details__button--enabled" onclick="ProductToeVoegen()">Voeg toe <button class="details__button--verwijder" onclick="MinKnop()">-</button></button>
+                </div>
+        </div>
+        <div class="product__card">
+            <img class="product__img--assault" src="images/monster-pl-assault.webp" alt="Monster Energy assault">
+                <div class="product__details">
+                    <h2 class="details__text">Monster Energy assault</h2>
+                    <h3 class="details__prijs">€1,39</h3>
+                    <button class="details__button--disabled" disabled="disabled">Voeg toe</button>
+                </div>
+        </div>
+    </section>  
+</body>
+</html>
