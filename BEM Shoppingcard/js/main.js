@@ -24,3 +24,7 @@ const productenLijst =
   ["Monster Energy mango loco", 1.39, "monster-energy-mango-loco.jpg", true],
   ["Monster Energy assault", 1.39, "monster-pl-assault.webp", false]
 ];
+
+productenLijst.forEach((producten) => {
+    console.log(producten);
+});
