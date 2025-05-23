@@ -119,8 +119,8 @@ img {
 }
 
 .details__button--disabled{
-    width: 5rem;
-    height: 2rem;
+    width: 6rem;
+    height: 2.5rem;
     color: var(--color_white);
     background-color: var(--button_disabled);
     cursor:not-allowed;

@@ -20,9 +20,9 @@ function MinKnop(){
 
 const productenLijst = 
 [
-  ["Monster Energy zero sugar", 1.39, "images/Monster Energy zero sugar.webp", true],
-  ["Monster Energy mango loco", 1.39, "images/monster-energy-mango-loco.jpg", true],
-  ["Monster Energy assault", 1.39, "images/monster-pl-assault.webp", false]
+  ["Monster Energy zero sugar", "€1,39", "images/Monster Energy zero sugar.webp", true],
+  ["Monster Energy mango loco", "€1,39", "images/monster-energy-mango-loco.jpg", true],
+  ["Monster Energy assault", "€1,39", "images/monster-pl-assault.webp", false]
 ];
 
 const productCardDummie = document.getElementsByClassName("product__card")[0];
@@ -33,16 +33,20 @@ productCardDummie.remove();
 
 productenLijst.forEach(producten => {
     
-    if (producten[3] == true) {
-        const waar = document.getElementsByClassName(".details__button--enabled");
-        waar.innerText = "Voeg toe";
-    }
+
+
 
     console.log(producten);
     const clone = productCardDummie.cloneNode(true);
-    product__container.appendChild(clone);
+        if (producten[3] !== true) {
+        const niet_waar = clone.querySelector(".details__button--enabled");
+        niet_waar.innerText = "niet beschikbaar";
+        niet_waar.classList.add("details__button--disabled");
+    } 
+
     clone.querySelector(".details__text").textContent = producten[0];
     clone.querySelector(".details__prijs").textContent = producten[1];
     clone.querySelector(".product__img--zero-sugar").src = producten[2];
     clone.querySelector(".details__button--enabled").centent = producten[3];
+    product__container.appendChild(clone);
 });
