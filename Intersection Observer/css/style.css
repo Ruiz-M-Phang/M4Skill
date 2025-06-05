@@ -1,0 +1,217 @@
+/* var */
+
+:root{
+    --color_white: white ;
+    --color_red: red ;
+    --button_enabled: black;
+    --button_disabled: rgb(88, 88, 88);
+}
+
+/* Reset css */
+
+*, *::before, *::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    }
+    
+    html, body {
+     min-height: 100vh;
+    }
+    html {
+    font-size: 62.5%; /* font is 10px */
+     scroll-behavior: smooth;
+    }
+    
+    img{
+     max-width: 100%;
+    height: auto;
+    }
+
+/* style van webpagina */
+
+.header {
+    margin: -1rem;
+    display: flex;
+    justify-self: stretch;
+    /* width: 66.6vw; */
+    background-color: #222831;
+    color: #ffffff;
+    align-items: center;
+    height: 4rem;
+}
+
+.header__nav {
+    margin-top: -2rem;
+    justify-content: stretch;
+}
+
+h1{
+    font-size: 250%;
+}
+
+p{
+    font-size: 110%;
+}
+
+figure{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+#asmr_map{
+    width: 900px;
+}
+
+#fgo_combat{
+
+}
+
+figcaption{
+    font-size: 80%;
+    font-style: italic;
+}
+
+audio{
+    display: block;
+    margin-top: 20px;
+}
+
+video{
+    width: 100%;
+    border-radius: 5px;
+}
+
+nav{
+    width: 60vw;
+    height: 100%;
+    margin: 0 auto;
+}
+
+li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5%;
+}
+
+a{
+    color: #ffffff;
+}
+
+img{
+    max-width: 100%;
+    transition: 0.2s transform;
+    align-items: center;
+    justify-items: center;
+}
+
+img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+body{
+    font-size: 20px;
+    background-image: url(https://i.pinimg.com/originals/78/69/45/7869459a488917aef60594876a7ef13b.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.eerste{
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tweede{
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.derde{
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+figcaption:last-of-type{
+    margin-bottom: 0;
+}
+
+article{
+    width: 60vw;
+    background: #e6c3a9;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+header{
+
+}
+
+footer{
+    background-color: #222831;
+    height: 60px;
+    padding: 18px;
+    width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin-left: 25;
+}
+
+footer > p > a{
+    color: #ffffff;
+    margin-left: 25;
+}
+
+@media screen and (max-wifth:1000px) {
+    article{
+        width: 80vw;
+    }
+    footer > p > a{
+        width: 80vw;
+    }
+    img:hover{
+        transform: none;
+    }
+}
+
+@media screen and (max-wifth:600px) {
+    body{
+        font-size: 16px;
+    }
+    article{
+        width: 100vw;
+        padding: 20px;
+    }
+    h1{
+        font-size: 180%;
+    }
+    footer > p > a{
+        width: 100vw;
+    }
+}
