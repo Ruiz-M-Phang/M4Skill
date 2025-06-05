@@ -38,15 +38,15 @@
     background-color: #222831;
     color: #ffffff;
     align-items: center;
-    height: 4rem;
+    height: 6rem;
 }
 
 .header__nav {
-    margin-top: -2rem;
+    margin-top: -3rem;
     justify-content: stretch;
 }
 
-h1{
+.article__title {
     font-size: 250%;
 }
 
@@ -55,14 +55,14 @@ p{
 }
 
 figure{
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     justify-content: center;
     align-items: center;
 }
 
 #asmr_map{
-    width: 900px;
+    width: 90rem;
 }
 
 #fgo_combat{
@@ -76,12 +76,12 @@ figcaption{
 
 audio{
     display: block;
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 video{
     width: 100%;
-    border-radius: 5px;
+    border-radius: 0.5rem;
 }
 
 nav{
@@ -129,28 +129,28 @@ img:hover{
 }
 
 body{
-    font-size: 20px;
+    font-size: 2rem;
     background-image: url(https://i.pinimg.com/originals/78/69/45/7869459a488917aef60594876a7ef13b.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.title{
+.article__title{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.eerste{
+.article__eerste-tekst{
     text-align: left;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.tweede{
+.article__tweede-tekst{
     text-align: left;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.derde{
+.article__derde-tekst{
     text-align: left;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -159,26 +159,23 @@ figcaption:last-of-type{
     margin-bottom: 0;
 }
 
-article{
+.article {
     width: 60vw;
     background: #e6c3a9;
     margin: 0 auto;
-    padding: 40px;
+    padding: 4rem;
+    margin-top: 1rem;
 }
 
-header{
-
-}
-
-footer{
+.footer{
     background-color: #222831;
-    height: 60px;
-    padding: 18px;
-    width: 60vw;
-    margin: 0 auto;
+    height: 6rem;
+    padding: 1.8rem;
+    margin: -1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-self: stretch;
     color: #ffffff;
     margin-left: 25;
 }
