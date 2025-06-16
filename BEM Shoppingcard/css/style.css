@@ -119,12 +119,13 @@ img {
 }
 
 .details__button--disabled{
-    width: 6rem;
+    width: 8rem;
     height: 2.5rem;
     color: var(--color_white);
     background-color: var(--button_disabled);
-    cursor:not-allowed;
-     border-radius: 1rem;
+    pointer-events: none;
+    cursor: not-allowed;
+    border-radius: 1rem;
 }
 
 @media screen and (max-width:1252px) {

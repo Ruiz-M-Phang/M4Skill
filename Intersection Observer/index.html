@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
     <title>Genshin Impact</title>
 </head>
-<body>
+<body id="scrollArea">
     <header class="header">
         <nav class="header__nav">
             <ul class="nav__list">
@@ -20,7 +21,7 @@
     <article class="article">
         <h1 class="article__title">Genshin Impact</h1>
         <figure>
-            <img src="Afbeeldingen/Genshin Impact Banner 2024.webp" alt="Genshin Impact 5.1 update">
+            <img id="scrollArea" src="Afbeeldingen/Genshin Impact Banner 2024.webp" alt="Genshin Impact 5.1 update">
             <figcaption>The story has been extended: Genshin Impact's Version 5.1 has released on October 9, 2024. <a
                     href="https://genshin.hoyoverse.com/en/"
                     target="_blank" rel="noopener noreferrer">bron</a></figcaption>
@@ -58,7 +59,7 @@
         </p>
         <figure>
             <p class="article__tweede-tekst">Xilonen Story Quest OST | Genshin Impact 5.0 OST</p>
-            <audio controls>
+            <audio controls autoplay>
                 <source src="Audio/xilonen-story-quest-ost-genshin-impact-50-ost.mp3" type="audio/mpeg">
             </audio>
             <a href="https://youtu.be/CQMP9WpCx2w?feature=shared" target="_blank" rel="noopener noreferrer">bron</a>
@@ -79,8 +80,8 @@
             the highest ever first-year launch revenue for any video game.
         </p>
         <figure>
-            <video poster="Afbeeldingen/maxresdefault.webp" src="video/Genshin Impact version 5.1 trailer.mp4"
-                controls></video>
+            <video image-poster="Afbeeldingen/maxresdefault.webp" src="video/Genshin Impact version 5.1 trailer.mp4"
+                controls autoplay></video>
             <figcaption>This is a trailer of Genshin Impact version 5.1. <a href="https://youtu.be/yJ-tllvBvmI"
                     target="_blank" rel="noopener noreferrer">bron</a></figcaption>
         </figure>
